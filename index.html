@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- Google Font -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="timeHolderContainer">
+            <p id="timeHolder">00:00:00</p>
+            <p id="dayHolder">Saturday</p>
+        </div>
+        <div id="stopWatchContainer">
+            <p id="stopWatchHolder">00:00:00</p>
+            <div id="btnContainer">
+                <button id="stopWatchBtn" class="btn" onclick="stopwatch()">Start</button>
+                <button id="stopWatchEndBtn" class="btn" onclick="endStopwatch()">End</button>
+                <button id="stopWatchClearBtn" class="btn" onclick="clearStopwatchElements()">Clear</button>
+            </div>
+            <div>
+                <ul id="stopWatchTimeHolder">
+                    <!-- <li>00:00:00</li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
